@@ -19,7 +19,7 @@
           :collapse="isSollapse" :collapse-transition="false"
           router :default-active="activePath">
           <!-- 一级菜单 -->
-          <el-submenu :index="item.id + ''" v-for="item in menulist" :key="item.id">
+          <el-submenu :index="item.id + ' '" v-for="item in menulist" :key="item.id">
             <!-- 一级菜单模板 -->
             <template slot="title">
               <!-- 一级菜单图标 -->
@@ -53,10 +53,10 @@ export default {
     return {
       menulist: [],
       iconsObj: {
-        125: 'iconfont icon-user',
-        103: 'iconfont icon-tijikongjian',
-        101: 'iconfont icon-shangpin',
-        102: 'iconfont icon-danju',
+        140: 'iconfont icon-danju',
+        130: 'iconfont icon-tijikongjian',
+        120: 'iconfont icon-shangpin',
+        110: 'iconfont icon-danju',
         100: 'iconfont icon-baobiao'
       },
       // 是否折叠

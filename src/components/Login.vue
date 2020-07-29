@@ -60,7 +60,7 @@ export default {
         this.$message.success('登录成功')
         console.log(res)
         // 登录后的token保存到sessionStorage
-        window.sessionStorage.setItem('token', res.data.token)
+        window.sessionStorage.setItem('token', res.data)
         // 登录后跳转后台主页
         this.$router.push('/home')
       })
